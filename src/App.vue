@@ -43,3 +43,7 @@ import Footer from "@/components/Footer.vue";
   <RouterView />
   <Footer />
 </template>
+<style>
+.active {
+  color: rgb(32, 87, 158);
+}</style>
