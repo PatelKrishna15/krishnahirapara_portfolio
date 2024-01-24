@@ -14,21 +14,21 @@ import Footer from "@/components/Footer.vue";
         >
           <li>
             <router-link
-              to="/"
+              to="/" :class="{'active':$route.path ==='/'}"
               class="text-dark-blue-900 dark:text-white hover:text-blue-900"
               >Home</router-link
             >
           </li>
           <li>
             <router-link
-              to="/about"
+              to="/about" :class="{'active':$route.path ==='/about'}"
               class="text-dark-blue-900 dark:text-white hover:text-blue-900"
               >About</router-link
             >
           </li>
           <li>
             <router-link
-              to="/contact"
+              to="/contact" :class="{'active':$route.path ==='/contact'}"
               class="text-dark-blue-900 dark:text-white hover:text-blue-900"
               >Contact</router-link
             >
