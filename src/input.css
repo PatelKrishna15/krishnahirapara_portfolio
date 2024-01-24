@@ -1,0 +1,74 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Home Page */
+
+img.logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+/* About Page CSS */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+/* Left side with image */
+
+.left-side {
+    flex: 5;
+    height: 50%;
+    max-width: 500px;
+    position: relative;
+}
+
+img.my-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.my-image:hover {
+    /* background-color: coral; */
+    transform: rotate(5deg)scale(1.1);
+}
+
+
+/* Right side with content */
+
+.right-side {
+    flex: 1;
+    padding: 0 20px;
+}
+
+
+/* Style for the content */
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content {
+    line-height: 1.5;
+}
+
+
+/* Footer CSS */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+}
