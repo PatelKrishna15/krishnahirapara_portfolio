@@ -14,14 +14,13 @@
       </div>
 
       <!-- Right Content (Image) -->
-      <div class="relative overflow-hidden group">
-    <img
-      class="w-40 mt-10 h-auto transition-transform transform hover:scale-110 hover:rotate-2"
+      <div class="relative overflow-hidden ">
+        <img
+      class="w-40  mt-10 h-auto transition-transform  transform hover:scale-110 hover:rotate-2 "
       src="@/assets/images.jfif"
       alt="Your Image"
     />
-    <div class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-  </div>
+      </div>
     </div>
   </main>
 </template>
