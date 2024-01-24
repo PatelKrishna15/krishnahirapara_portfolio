@@ -1,8 +1,8 @@
 <template>
-  <div class="container mx-auto my-8">
+  <div class="container bg-gray-500 mx-auto pt-8 pb-8 my-8">
     <h2 class="text-4xl font-bold mb-4 text-center">Contact Us</h2>
 
-    <form @submit.prevent="submitForm" class="max-w-md mx-auto">
+    <form @submit.prevent="submitForm" class="max-w-md mx-auto ">
       <div class="mb-4">
         <label for="name" class="block text-sm font-medium text-gray-600">
           Name

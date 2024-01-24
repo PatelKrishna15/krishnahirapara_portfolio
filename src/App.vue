@@ -6,7 +6,7 @@ import Footer from "@/components/Footer.vue";
 <template>
   <header >
    
-    <nav class="bg-white-500 ">
+    <nav class="bg-gray-100 ">
       <div class="max-w-screen-xl  py-3 mx-auto flex items-center">
         <img src="@/assets/hk_logo.jpeg" alt="Logo" class="h-12 w-auto px-1" />
         <ul
