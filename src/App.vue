@@ -8,7 +8,7 @@ import Footer from "@/components/Footer.vue";
   <header>
     <nav class="bg-gray-100">
       <div class="max-w-screen-xl py-3 mx-auto flex items-center">
-        <img src="@/assets/hk_logo.jpeg" alt="Logo" class="h-12 w-auto px-1" />
+        <img src="@/assets/logo.png" alt="Logo" class="h-12 w-auto px-1" />
         <ul
           class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm"
         >
@@ -36,7 +36,7 @@ import Footer from "@/components/Footer.vue";
               >Contact</router-link
             >
           </li>
-          
+         
           <!-- Add more navigation links as needed -->
         </ul>
       </div>
