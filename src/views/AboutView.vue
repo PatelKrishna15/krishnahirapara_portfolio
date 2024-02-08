@@ -15,8 +15,8 @@
       <!-- Right Content (Image) -->
       <div class="group inline-block">
         <img
-          class="w-40 mt-20 h-auto transition-transform transform hover:scale-110 hover:rotate-2 group-hover:bg-blue-500"
-          src="@/assets/images.jfif"
+          class="w-40 mt-10 h-auto transition-transform transform hover:scale-110 hover:rotate-2 group-hover:bg-blue-500"
+          src="@/assets/my_pic.jpeg"
           alt="Your Image"
         />
       </div>
