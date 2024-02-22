@@ -2,8 +2,8 @@
   <div class="container bg-gray-500 mx-auto pt-8 pb-8 my-8">
     <h2 class="text-4xl font-bold mb-4 text-center">Contact Us</h2>
 
-    <form @submit.prevent="submitForm" class="max-w-md mx-auto ">
-      <div class="mb-4">
+    <form @submit.prevent="submitForm" class="max-w-md mx-auto">
+      <div class="mb-4 container">
         <label for="name" class="block text-sm font-medium text-gray-600">
           Name
         </label>
@@ -60,23 +60,37 @@ export default {
   data() {
     return {
       formData: {
-        name: '',
-        email: '',
-        message: '',
+        name: "",
+        email: "",
+        message: "",
       },
     };
   },
   methods: {
-    async submitForm() {
-      try {
-        // Make an HTTP request to your backend server
-        const response = await this.$axios.post('/api/send-email', this.formData);
-
-        // Optionally, handle the response from the server
-        console.log('Server response:', response.data);
-      } catch (error) {
-        console.error('Error submitting form:', error);
-      }
+    submitForm() {
+      // Send form data to backend server
+      fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(this.formData),
+      })
+        .then((response) => {
+          if (response.ok) {
+            alert("Message sent successfully!");
+            // Reset form fields
+            this.formData.name = "";
+            this.formData.email = "";
+            this.formData.message = "";
+          } else {
+            alert("Error sending message. Please try again later.");
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("Error sending message. Please try again later.");
+        });
     },
   },
 };
